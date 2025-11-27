@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=yes">
+    <title>BSABE Pontevedra Survey System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ card.name }} - Agricultural and Biosystems Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <div class="logo logo-capsu">
+                            <img src="{{ url_for('static', filename='images/capsu-logo.png') }}" alt="CAPSU Logo"
+                                onerror="this.style.display='none'">
+                            <i class="fas fa-university fallback-icon"></i>
+                        </div>
+                        <div class="logo logo-bsabe">
+                            <img src="{{ url_for('static', filename='images/bsabe-logo.png') }}" alt="BSABE Logo"
+                                onerror="this.style.display='none'">
+                            <i class="fas fa-tractor fallback-icon"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1>{{ card.name }}</h1>
+                        {% if card.subtitle %}
+                        <p>{{ card.subtitle }}</p>
+                        {% endif %}
+                        <span class="badge">Document Repository</span>
+                    </div>
+                </div>
+
+                <div class="admin-section">
+                    <button class="back-btn" onclick="window.location.href='/'">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </button>
+                    {% if is_admin %}
+                    <span class="admin-badge"><i class="fas fa-crown"></i> Administrator</span>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                    {% else %}
+                    <button class="admin-login-btn" onclick="showLoginModal()">
+                        <i class="fas fa-user-shield"></i> Admin Access
+                    </button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </header>
+
+        </section>
+
+    <!-- Remove the duplicate search section at the top and keep only this one -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-header">
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>{{ card.name }}</span>
+                </div>
+                <h3>{{ card.name }}</h3>
+
+                <!-- Search Section - Keep only this one -->
+                <div class="search-section">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-input"
+                            placeholder="Search folders, files, documents...">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+                    <div id="searchOverlay" class="search-overlay"></div>
+                </div>
+
+                {% if card.subtitle %}
+                <p>{{ card.subtitle }}</p>
+                {% endif %}
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="cards-grid" id="cardsGrid">
+                {% if is_admin %}
+                <!-- Create Options Button (Admin Only) -->
+                <div class="card add-card" onclick="showCreateOptions({{ card.id }})">
+                    <div class="card-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Add New</h3>
+                        <p>Create folder or add file</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Dynamic Cards -->
+                {{ contents_html | safe }}
+
+                {% if not contents_html and not is_admin %}
+                <div class="empty-state">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>Folder is Empty</h3>
+                    <p>No documents or subfolders available in this directory.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/"><i class="fas fa-home"></i> Home</a>
+                    <a href="/videos"><i class="fas fa-video"></i> Videos</a>
+                    <a href="#" onclick="scrollToContent()"><i class="fas fa-search"></i> Search</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#"><i class="fas fa-book"></i> Documentation</a>
+                    <a href="#"><i class="fas fa-download"></i> Downloads</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Pontevedra, Spain</p>
+                    <p><i class="fas fa-phone"></i> +34 XXX XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@bsabe2025.com</p>
+                </div>
+            </div>
+
+            <div class="footer-back-to-top">
+                <button class="back-to-top-btn">
+                    <i class="fas fa-chevron-up"></i>
+                    Back to Top
+                </button>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 BSA Pontevedra Survey System. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for the surveying community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-shield"></i> Administrator Login</h3>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-login">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Settings Modal -->
+    <div id="cardSettingsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="settingsTitle"><i class="fas fa-cog"></i> Folder Settings</h3>
+                <span class="close" onclick="closeCardSettingsModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="cardSettingsForm">
+                    <input type="hidden" id="cardId">
+                    <input type="hidden" id="cardType">
+                    <input type="hidden" id="parentId">
+
+                    <div class="form-group">
+                        <label for="cardName">Folder Name:</label>
+                        <input type="text" id="cardName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardSubtitle">Description:</label>
+                        <input type="text" id="cardSubtitle" placeholder="Brief description of this folder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardLink">External Link (Optional):</label>
+                        <input type="url" id="cardLink" placeholder="https://example.com">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-save" onclick="saveCardChanges()">
+                            <i class="fas fa-save"></i> Save Changes
+                        </button>
+                        {% if is_admin %}
+                        <button type="button" class="btn-primary" onclick="addSubCard()" id="addSubCardBtn">
+                            <i class="fas fa-folder-plus"></i> Add Subfolder
+                        </button>
+                        <button type="button" class="btn-primary" onclick="addFileButton()">
+                            <i class="fas fa-file-plus"></i> Add File
+                        </button>
+                        <button type="button" class="btn-danger" onclick="deleteCard()">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Add this Create Options Modal after the Action Modal -->
+    <div id="createOptionsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-plus-circle"></i> Create New</h3>
+                <span class="close" onclick="closeCreateOptionsModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="action-buttons">
+                    <button type="button" class="btn-primary action-btn"
+                        onclick="addNewCard(currentParentId); closeCreateOptionsModal();">
+                        <i class="fas fa-folder-plus"></i>
+                        Create New Folder
+                    </button>
+                    <button type="button" class="btn-secondary action-btn"
+                        onclick="addFileButtonFromCreate(); closeCreateOptionsModal();">
+                        <i class="fas fa-file-plus"></i>
+                        Add New File
+                    </button>
+                    <button type="button" class="btn-cancel action-btn" onclick="closeCreateOptionsModal()">
+                        <i class="fas fa-times"></i>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+<!-- Include all modals and scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    <script>
+        // Back navigation function
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        }
+
+        // Keyboard shortcut for back navigation (Esc key)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                goBack();
+            }
+        });
+    </script>
+</body>
+</html>

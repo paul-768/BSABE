@@ -1,0 +1,1261 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "I. UNIVERSITY",
+      "subtitle": "",
+      "link": "",
+      "type": "card",
+      "parent_id": null,
+      "children": [
+        {
+          "id": 2,
+          "name": "ALL PLANS",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 1,
+          "children": [
+            {
+              "id": 11,
+              "name": "DOCUMENTS FOR PLANNING",
+              "subtitle": "",
+              "link": "",
+              "type": "card",
+              "parent_id": 2,
+              "children": [
+                {
+                  "id": 12,
+                  "name": "LAND USE DEVELOPMENT AND INFRASTRUCTURE PLAN (LUDIP) - CAPIZ STATE UNIVERSITY PONTEVEDRA CAMPUS.pdf",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1E2spWvd4sXsM1yac4DuPrA0pBh-MAPhO/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 11,
+                  "children": []
+                },
+                {
+                  "id": 13,
+                  "name": "PROGRAM AGENDA FOR THE INTERNAL MIDYEAR PERFORMANCE DIALOGUE - CAPIZ STATE UNIVERSITY (AUGUST 20, 2025)",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1xSVpSLdMaTLTc87DBDHnMYHdeSvCaQ_V/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 11,
+                  "children": []
+                },
+                {
+                  "id": 14,
+                  "name": "PROGRAMS, ACTIVITIES, AND PROJECTS (PAPS) MATRIX FOR THE CAPIZ STATE UNIVERSITY DEVELOPMENT INVESTMENT PROGRAM (DIP) 2023-2028",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1-kaTKDkrhUV5UTGejdNyqBriMc-1RnEX/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 11,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 15,
+              "name": "2021_ACTION PLAN",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1qnr8-y0FOMUcQOOtcsGVp8TxRpluQRVK/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 16,
+              "name": "2022_Action Plan",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1x1DTMqKhlHrG-clj3_V3E9R_2oxI3CTC/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 17,
+              "name": "2023_Action Plan",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1FPncdopBX5_WNSmXInaqfvbFpEmQqBgB/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 18,
+              "name": "2024_OPERATIONAL PLAN ",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/15v4ewzFH0HMhInt3N0vqQccu2U0RBCVa/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 19,
+              "name": "2025_Operational Plan_",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1LaCDve7tvARFk3MHRoHyLZG4qBO9uDxd/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 20,
+              "name": "Action-Plan-2024_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1jrpDvkAn63sxkUKAWR_AAJwMnhvA71Me/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 21,
+              "name": "Action-Plan-2025_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/14UQdJn4e7p9zmSt2VQ6NXUVUEQcuSB-Y/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 22,
+              "name": "AMBISYON CAPSU",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1Q3jbHVYPW9qz_YZ-CRUrlFkAOtZrG15X/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 23,
+              "name": "CapSU Strategic Plan 2018-2027",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/11hiDx2F58b6gbczFuMzRQ1O8tTc6i4Fj/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 24,
+              "name": "CAPSU-Internationalization-Plan-Revised_3",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/19T7qipAFVDv-nF1Vf2lIEfmoH70-VsYA/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 25,
+              "name": "ISO-ACTION-PLAN-2021_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1iDRJt7MJ2CWpfhKFuzKFw7D6vVqK25K1/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 26,
+              "name": "ISO-ACTION-PLAN-2023_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1WC_4XUD2D8kXYKSFt4wVLje4t6MaU73b/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 27,
+              "name": "ISO-ACTION-PLAN-2023",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1NFv1f0Onq1pNMXn5LS7k1sKqI47lAfSf/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 28,
+              "name": "Minutes of Strategic Planning",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1eS15aC8TslfaR731D-WcbBPM8dNu79IV/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 29,
+              "name": "Program - Strategical Plan - Workshop - Phase II - July 2025.pdf",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1ggDnvIVQsv1f2YzMBQ5MvLzjPC6_RKp7/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 30,
+              "name": "Strategic Planning Workshop - Phase I - May 2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1g76ATnGVidMX36m7rfbKo6NoSE5A5Jpk/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 31,
+              "name": "Strategic Planning Workshop - Phase II - July 2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1R9dcnWP1Zobh22SlRuidkQ7IuIAEvULD/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            },
+            {
+              "id": 32,
+              "name": "UNIVERSITY STRATEGIC PLAN AMBISYON CAPSU IMAGES",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1NgdF3ECZ3fZVCzSosC3hKRuoI6mdSACs/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "GRADUATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 1,
+          "children": [
+            {
+              "id": 33,
+              "name": "21st-CAPSU-Commencement-Program-1_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1gbt41wLiM3aZ86bkgmn3ClYZbQx-RHTR/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 6,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "MEMOS",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 1,
+          "children": [
+            {
+              "id": 34,
+              "name": "IDP - CAPSU MEMO ORDER 2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1mNQES6gTGoV8VG6Odn_2vEEifOunvQEd/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 7,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "PERFORMANCE AND MONITORING AND EVALUATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 1,
+          "children": [
+            {
+              "id": 35,
+              "name": "ANNUAL PERFORMANCE REVIEW - 2023 - PROGRAM SEPT 6 2024",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1sCn0pEPZ3h-LfXuYzm9XxwB_FIR9zBoV/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 8,
+              "children": []
+            },
+            {
+              "id": 36,
+              "name": "ANNUAL PERFORMANCE REVIEW - CapSU-MEMO-No.-2024-09-1820-APR_3 FOR SEPT 6 2024",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1VI8PBWrrcNkMvADDOcPxOUSPx_RvFfH6/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 8,
+              "children": []
+            },
+            {
+              "id": 38,
+              "name": "ANNUAL PERFORMANCE REVIEW CY 2023 - SEPT 6 2024",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1PbrCKJo4-aAVAgJUhyaruUupn9dkBgyu/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 8,
+              "children": []
+            },
+            {
+              "id": 39,
+              "name": "GAA - TARGET - 2024",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1zPSbZ1H-7gjhfr4VPJVhkoWBRLy9okdV/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 8,
+              "children": []
+            },
+            {
+              "id": 40,
+              "name": "PERFORMANCE REVIEW CY 2024 & CY 2025 - TARGET SETTING AND OPCR CASCADING",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/19JoThjIcL3gnvGmB5Gor4n6CtDtav8aL/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 8,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "RESEARCH AND DEVELOPMENT",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 1,
+          "children": [
+            {
+              "id": 41,
+              "name": "BOARD RESOLUTION APPROVED REVISED RDE MANUAL OF THE UNIVERSITY",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1QFj4iJIpTREOtAeEZm2_936nXQ2nnlhk/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 9,
+              "children": []
+            },
+            {
+              "id": 42,
+              "name": "CAPSU RDE AGENDA 2023-2027",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1-PBNMUXH8XpmDel0usefmNOPFgAGaIQi/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 9,
+              "children": []
+            },
+            {
+              "id": 43,
+              "name": "RDE AGENDA",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1EUOHSkUKHJAHSErO0mspw-zhNFvf0F4W/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 9,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "TRAVEL ORDERS",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 1,
+          "children": [
+            {
+              "id": 44,
+              "name": "Travel-Order-No.-25-07-2054-dated-July-29-2025-TO-ATTEND-THE-STRATEGIC-PLANNING-WORKSHOP-PHASE-2_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1GqiuAU7N0DcfIIp8LtwLOfHDvOZwpQ6L/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 10,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "II. CAMPUS",
+      "subtitle": "",
+      "link": "",
+      "type": "card",
+      "parent_id": null,
+      "children": [
+        {
+          "id": 45,
+          "name": "DISASTER RISK REDUCTION (DRR)",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 3,
+          "children": [
+            {
+              "id": 61,
+              "name": "ERP-Core-Group-and-DCG-page-1",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1IpirGFi-jdHUXtbZHCkbMNenGepXuesC/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 45,
+              "children": []
+            },
+            {
+              "id": 62,
+              "name": "ERP-Core-Group-and-DCG-page-2",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1iJ3nlEDcvETqw6WQu7TfK-6Sp4vC2JoA/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 45,
+              "children": []
+            },
+            {
+              "id": 63,
+              "name": "x-protocol-cover-page",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/13sSagwgZzkfri0eyvTgp2FOOPmqgjb9f/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 45,
+              "children": []
+            },
+            {
+              "id": 64,
+              "name": "x-protocol-page-1",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1Yuj011yQ27ZxT3bAdfJ1dnRxRwvRs-Pr/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 45,
+              "children": []
+            },
+            {
+              "id": 65,
+              "name": "x-protocol-page-2",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1llU__bAhAqSAQFsa9VD0vBBIVeoXw1mb/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 45,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "GRADUATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 3,
+          "children": [
+            {
+              "id": 66,
+              "name": "21st-CAPSU-Commencement-Program-1_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1yAWVY2feUZAr3Lw4yTexcg0pGQW_0XiB/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 46,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "MEMOS",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 3,
+          "children": [
+            {
+              "id": 67,
+              "name": "CAPSU MEMO 2025 SUBMISSION OF INDIVIDUAL DEVELOPMENT PLAN - IDP - FEB 2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1WYg46wqBx-1j27zGBdlQWmVDhaxjLS4k/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 47,
+              "children": []
+            },
+            {
+              "id": 68,
+              "name": "CAPSU MEMO 2025 SUBMISSION OF INDIVIDUAL DEVELOPMENT PLAN - IDP - SEPT 2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1RcY58DXjVgS3Vt7hRHeSFaxM8bdMMOiP/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 47,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "MONITORING AND EVALUATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 3,
+          "children": [
+            {
+              "id": 69,
+              "name": "PERFORMANCE MONITORING AND EVALUATION (PME) RESULTS FOR CAPIZ STATE UNIVERSITY - PONTEVEDRA CAMPUS (2023 YEAREND)",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1_XxiR5xtCxewxf7--3D9igziLvbSvw8o/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 48,
+              "children": []
+            },
+            {
+              "id": 70,
+              "name": "PERFORMANCE MONITORING AND EVALUATION (PME) RESULTS FOR CAPIZ STATE UNIVERSITY - PONTEVEDRA CAMPUS (CY 2024 YEAREND)",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1tWeoqAeKX1Lv9OMKO8Hvja8P-GYRP3Ge/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 48,
+              "children": []
+            },
+            {
+              "id": 71,
+              "name": "YEAREND PERFORMANCE MONITORING AND EVALUATION -2024",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/19V1LmCaXNretKPCfvdbKEAGaHtg1_HT_/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 48,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "PICTURES | VIDEOS STRATEGIC PLANNING AT CAPSU PONTEVEDRA",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 3,
+          "children": [
+            {
+              "id": 72,
+              "name": "IMAGES STRATEGIC PLAN",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1jqpQd_XkIjeyvmOoHtlWJ7JIb2OgkNHR/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 49,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "PONTEVEDRA CAMPUS RDE AGENDA",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 3,
+          "children": [
+            {
+              "id": 73,
+              "name": "New FileCAPSU Pontevedra RDE 5 year Agenda and Roadmap.pptx",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1WWdRP99m0EVhQGWAJqGg0nlcIrl7mghd/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 50,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "ACTION PLAN OF THE OFFICE OF STUDENTS AFFAIRS (OSA)",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1lnte8M8CK6hX7iWpbMAGCvVcU9O-DpL1/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 52,
+          "name": "CEAT - SUPERVISORY PLAN I",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/10sCSTtMfUq9JamDM_M27rTA5tWiBUCS_/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 53,
+          "name": "CEAT - SUPERVISORY PLAN II",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1TIrXCGW7UyOlp0A_ULnNn7xdeSmaSJhW/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 54,
+          "name": "CEAT - SUPERVISORY PLAN III",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/18Cu-hDfwxY1JWjQ1d9HPgTBHp-6w6IbX/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 55,
+          "name": "CEAT - SUPERVISORY PLAN IV",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1eHunyIvr-km2n1m1uxJ-Gb_7CzNNFhvK/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 56,
+          "name": "CURRICULUM DEVELOPMENT",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1ZvmLGwv3_mQVsgV-4b4agha4pHdUTv5F/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 57,
+          "name": "MINUTES OF CAPSU PONTEVEDRA CY 2023 YEAR END PERFORMANCE MONITORING AND EVALUATION",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1Z5NVL7P15BjCqupzQGFN5LfV8ZiczIB_/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 58,
+          "name": "PONTEVEDRA STRATEGIC PLAN 2017-2027",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1ZsRIuDhQKQilxa6d8csYifyBaDApMOKz/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        },
+        {
+          "id": 59,
+          "name": "PRODUCTION",
+          "subtitle": "",
+          "link": "https://drive.google.com/file/d/1b4LWuaiuIIkJ7IB2kz8jA5MEP_JR2k4c/view?usp=drive_link",
+          "type": "file",
+          "parent_id": 3,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "III. COLLEGE (CEAT)",
+      "subtitle": "",
+      "link": "",
+      "type": "card",
+      "parent_id": null,
+      "children": [
+        {
+          "id": 74,
+          "name": "CEAT",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 4,
+          "children": []
+        },
+        {
+          "id": 75,
+          "name": "COAF",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 4,
+          "children": [
+            {
+              "id": 76,
+              "name": "COLLEGE OF AGRICULTURE AND FISHERIES STRATEGIC PLAN 2021-2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1KlcY_jclTMYsTy4ZHZE8m6KbG0A3X3sB/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 75,
+              "children": []
+            },
+            {
+              "id": 77,
+              "name": "FACULTY DEVELOPMENT PLAN 2022 - 2027",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1FhNg62huKh8GnEJwLqbB0w3IpjrHhatx/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 75,
+              "children": []
+            },
+            {
+              "id": 78,
+              "name": "Faculty-Development-Plan-2025-2030_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1lTGCELUO5wjDzpdTkPeoY8ThQHEvOagm/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 75,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "IV. DEPARMENT",
+      "subtitle": "",
+      "link": "",
+      "type": "card",
+      "parent_id": null,
+      "children": [
+        {
+          "id": 79,
+          "name": "MOA",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 95,
+              "name": "Kubota_MOA",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1eaW4aAzpaoiItRgtiNzuNXLxz6zgcU0w/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 79,
+              "children": []
+            },
+            {
+              "id": 96,
+              "name": "Orchard Valley Inc_MOA",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1Aw-TRCRHMiYFgw2qjgkeC6ZfEujDsR4z/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 79,
+              "children": []
+            },
+            {
+              "id": 97,
+              "name": "SUMMARY OF LINKAGES",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1SzOBJJvbRYRRxEDHr9ZUt3dPFtr2t6Bc/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 79,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 80,
+          "name": "PLANNING",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 98,
+              "name": "AREA-PLANNING-PROCESS TO BE UPDATED",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1VoDr-t7arwvHdV8n7mo9BEycdQJx-gPc/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 80,
+              "children": []
+            },
+            {
+              "id": 99,
+              "name": "DRAFT-of-PROGRAM-for-BSABE-STRATEGIC-PLAN-2024-2028 (1)",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1hLR0cjyCEDRbHg4SrskT9Rgy_66rZjnd/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 80,
+              "children": []
+            },
+            {
+              "id": 100,
+              "name": "Letter-of-Engr-Lampong-to-CEAT-Dean-for-BSABE-Strategic-Plan-2024-2028 (1)",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1qL8TLdhKkBXdX94r8ov_wqmH5WIJ4RNR/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 80,
+              "children": []
+            },
+            {
+              "id": 101,
+              "name": "Minutes-of-BSABE-Meeting-Strategic-Plan-2018-2023",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/11W5D8UdN9qaNowYza2qkBzDVJRIW0Svy/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 80,
+              "children": []
+            },
+            {
+              "id": 104,
+              "name": "SUPERVISORY-PLAN-BSABE SY 2022-2023",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1GWOq1ZNPjV1JAxzdqPuCnoKsc2oh6NzD/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 80,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 81,
+          "name": "I. ENROLMENT",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 105,
+              "name": "BSABE-GRAPH-ENROLLMENT-TREND-NO-OF-GRADUATES",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1uAlWlPnysi63jjCosqcOuyNFoBAGIRFp/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 81,
+              "children": []
+            },
+            {
+              "id": 106,
+              "name": "BSABE-LS-Enrolment-TREND-2018-19-to-2025-26_2",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1GI-N_mU_-Aadov3Zp3IOSDBbb31F1mu5/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 81,
+              "children": []
+            },
+            {
+              "id": 107,
+              "name": "SUMMARY OF ENROLLMENT FOR ACADEMIC YEAR 2025-2026 - BACHELOR OF SCIENCE IN AGRICULTURAL BIOSYSTEM ENGINEERING (BSABE)",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1p1AkiNgwjvjm_nXs8_uDHEfth87gaHsx/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 81,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "name": "II. STUDENT DEVELOPMENT",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 108,
+              "name": "STUDENT DEVELOPMENT SERVICES",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1WE30uufole-URZVM1bnma5ANBQHN6Tb5/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 82,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 83,
+          "name": "III. FACULTY DEVELOPMENT",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 109,
+              "name": "BSABE FACULTY DEVELOPMENT PROGRAM 2023-2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1Zug5vZiUub4XaVPCdg0vgJO3v9mZH0z4/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 83,
+              "children": []
+            },
+            {
+              "id": 110,
+              "name": "BSABE Summary of Individual Performance Commitment and Review",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/15zhyws7mj63hJKw3PC7XhF1KWr7-KzE5/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 83,
+              "children": []
+            },
+            {
+              "id": 111,
+              "name": "BSABE-CORE-FACULTY-PROFILE-MATRIX - UPDATED",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1ax7t0gkLvgIxv1v5w15ZgV9_praqpWxI/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 83,
+              "children": []
+            },
+            {
+              "id": 112,
+              "name": "BSABE-FACULTY-DEVELOPMENT-PLAN-2023-2028",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1kdJgPPGwrS9fNDRJaOyqWGl5cKbjksec/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 83,
+              "children": []
+            },
+            {
+              "id": 113,
+              "name": "Updated-BSABE-Seminars-and-Training-attended",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1txQJn0LrpL4HSs64RcQrX4ib7F4d2yPq/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 83,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "name": "IV. CURRICULUM DEVELOPMENT",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 114,
+              "name": "CURRICULUM DEVELOPMENT",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1GQycOp-DoByE5IUCrGe80Kk40BFQifm-/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 84,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 85,
+          "name": "V. LICENSURE EXAMINATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 116,
+              "name": "TRAINING ON REVIEW TECHNIQUES AND STRATEGIES FOR THE AGRICULTURAL AND BIOSYSTEMS ENGINEERING LICENSURE EXAMINATION",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/10V1Lhi8BA9IulVgTtC9hl9Xg3Xe6piaO/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 85,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 86,
+          "name": "VI. PROGRAM ACCREDITATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 117,
+              "name": "AACCUP SUMMARY OF FINDINGS 2022",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1lDvBbWBii4cDaotXQxUWd0QOpF0xpXNZ/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 86,
+              "children": []
+            },
+            {
+              "id": 118,
+              "name": "BSABE ACCREDITATION DOCUMENTS",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/169P6MsPIYZr2RoJcz7FqQPXUC0QRk4v6/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 86,
+              "children": []
+            },
+            {
+              "id": 119,
+              "name": "BSABE LEVEL 3 REACCREDITED CERTIFICATE 2019 - 2022",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/18RawEkGXMdrC_9LmSiIL3DQR4MrXxjX1/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 86,
+              "children": []
+            },
+            {
+              "id": 120,
+              "name": "BSABE LEVEL 3 REACCREDITED",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1CJ-BhvEA9PhMR44hktqhNs2dCfPkEYg7/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 86,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 87,
+          "name": "VII. GRADUATES",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 121,
+              "name": "2024 - 20th COMMENCEMENT PROGRAM",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1PrlBWDmGFtl4lq13bACzayo9pu8JDnfo/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 87,
+              "children": []
+            },
+            {
+              "id": 122,
+              "name": "2025 - 21st CAPSU COMMENCEMENT PROGRAM",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1OV9lUsjKR6N_y6qqqy7trRP42_yhRGlL/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 87,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 88,
+          "name": "VIII. INSTRUCTIONAL MATERIALS",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": []
+        },
+        {
+          "id": 89,
+          "name": "IX. MONITORING AND EVALUATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 123,
+              "name": "INSTRUMENTS",
+              "subtitle": "",
+              "link": "",
+              "type": "card",
+              "parent_id": 89,
+              "children": [
+                {
+                  "id": 132,
+                  "name": "PPP_B_Implementation_Describe-the-participation-of-the-administration-faculty-students-and-stakeholders",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1CvHblS_ugtktWG9XeDh0JodAg8vzk2uZ/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 123,
+                  "children": []
+                },
+                {
+                  "id": 133,
+                  "name": "PPP_Parameter_B_System-Inputs_and_Processes_Extension-Office",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1iX8kc65ejVYVMeBbkIev2hsUae48tUE8/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 123,
+                  "children": []
+                },
+                {
+                  "id": 134,
+                  "name": "PPP_Parameter_B_System-Inputs_and_Processes_Instruments-for-Monitoring-and-Evaluation",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1mT3lzsXbUfrff5s9mwh5XVrHFFoGttWe/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 123,
+                  "children": []
+                },
+                {
+                  "id": 135,
+                  "name": "MONITORING AND EVALUATION INSTRUMENT/FORM",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1kj74gLkVZh95hs4g4c3doXZtu4Rk_SVr/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 123,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 124,
+              "name": "BSABE-OPCR-JULY-TO-DECEMBER-2024",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1jLZlq0s-ZDW6RhEx0y9eaSkIgS5Gr-YA/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 125,
+              "name": "CLASS OBSERVATIONS \u2013 SECOND SEMESTER 2023-2024 AND 2024-2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1c8tNheVryLCxV-yHO0wQ4pVNZht6H1tN/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 126,
+              "name": "IPCR-Summary",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/19K4jkFKRx6AL6sII_zLzphwT7JPpmWjl/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 127,
+              "name": "MINUTES OF BSABE STRATEGIC PLANNING 2024\u20132028",
+              "subtitle": "",
+              "link": "https://docs.google.com/document/d/1bQ_nvbv_cIZbvwf7j-h_tlx2QacsCIFk/edit?usp=drive_link&ouid=106022587600914738598&rtpof=true&sd=true",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 128,
+              "name": "MINUTES OF BSABE STRATEGIC PLANNING 2024\u20132028",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1tDkdG96I4AKgx_43pau3_ygG6OHoK4Tb/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 129,
+              "name": "RENOVATION/INFRASTRUCTURE PLANS FOR THE BACHELOR OF SCIENCE IN AGRICULTURAL AND BIOSYSTEMS ENGINEERING (BSABE) FACILITY",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/15PPGF6PdTVr4llhEofAzfP9fVRZ25f06/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 130,
+              "name": "SUPERVISORY PLAN 2021 - 2022",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1Ziwuehbn7eEVxuSTh3odTW6dfSYbObzD/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 89,
+              "children": []
+            },
+            {
+              "id": 136,
+              "name": "BSABE STRATEGIC PLAN",
+              "subtitle": "",
+              "link": "",
+              "type": "card",
+              "parent_id": 89,
+              "children": [
+                {
+                  "id": 137,
+                  "name": "BSABE-STRATEGIC-PLAN-2024-2028",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1ADx5vEI_yQWKk_c_mmTF6u8tknH7XQPZ/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 136,
+                  "children": []
+                },
+                {
+                  "id": 138,
+                  "name": "BSABE-STRATEGIC-PLAN-2019-2024",
+                  "subtitle": "",
+                  "link": "https://drive.google.com/file/d/1unwwQa_zrp3nkmBoAvdm3cQVpoP1zofx/view?usp=drive_link",
+                  "type": "file",
+                  "parent_id": 136,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "name": "X. NEW NORMAL ADAPTABILITY",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": []
+        },
+        {
+          "id": 91,
+          "name": "XI. INTERNATIONALIZATION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 139,
+              "name": "INTERNATIONALIZATION-PLAN-BSABE - 2025",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1Nyi3ZkhvRN5emVPR1NW4Xq8EzfHn27Qu/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 91,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "name": "XII. RESEARCH",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 140,
+              "name": "7_PATENTED_COMMERCIALIZED-RESEARCHES",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1x9qgW1EqDBJO5gxMmb6ap4OfejlCKKM1/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 92,
+              "children": []
+            },
+            {
+              "id": 141,
+              "name": "9_COPYRIGHTED-RESEARCHES",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1vy0vm5XUroMsg8B02z161I2hgAUi0Jli/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 92,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "name": "XII. EXTENSION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": []
+        },
+        {
+          "id": 94,
+          "name": "XIV. PRODUCTION",
+          "subtitle": "",
+          "link": "",
+          "type": "card",
+          "parent_id": 5,
+          "children": [
+            {
+              "id": 142,
+              "name": "BSABE SHELL PULVERIZER",
+              "subtitle": "",
+              "link": "https://drive.google.com/file/d/1g9bbYhIZZOEBX8dO2XtOPQ61DREaIxXE/view?usp=drive_link",
+              "type": "file",
+              "parent_id": 94,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Agricultural and Biosystems Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/videos.css') }}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <div class="logo logo-capsu">
+                            <img src="{{ url_for('static', filename='images/capsu-logo.png') }}">
+                            <i class="fas fa-university fallback-icon"></i>
+                        </div>
+                        <div class="logo logo-bsabe">
+                            <img src="{{ url_for('static', filename='images/bsabe-logo.png') }}">
+                            <i class="fas fa-tractor fallback-icon"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1>Agricultural and Biosystems Engineering</h1>
+                        <p>Capiz State University - Pontevedra Campus</p>
+                    </div>
+                </div>
+
+                <div class="admin-section">
+                    <button class="back-btn" onclick="window.location.href='/'">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </button>
+                    {% if is_admin %}
+                    <span class="admin-badge"><i class="fas fa-crown"></i> Admin</span>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                    {% else %}
+                    <button class="admin-login-btn" onclick="showLoginModal()">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="{{ url_for('static', filename='images/department-bg.png') }}" alt="BSABE Department"
+                onerror="this.style.display='none'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>BSABE Video Gallery</h2>
+                    <p>Watch and engage with our latest videos, tutorials, and department highlights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-header">
+                <h3>Video Gallery</h3>
+                <p>Explore our collection of educational and promotional videos</p>
+            </div>
+
+            {% if is_admin %}
+            <!-- Upload Video Button -->
+            <div class="upload-section">
+                <button class="btn-primary" onclick="showUploadModal()">
+                    <i class="fas fa-upload"></i> Upload New Video
+                </button>
+            </div>
+            {% endif %}
+
+            <!-- Videos Grid -->
+            <div class="videos-grid" id="videosGrid">
+                {% for video in videos %}
+                <div class="video-card" data-video-id="{{ video.id }}">
+                    <div class="video-thumbnail">
+                        <video preload="metadata" onclick="openVideoModal({{ video.id }})">
+                            <source src="{{ url_for('static', filename='uploads/videos/' + video.filename) }}"
+                                type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay" onclick="openVideoModal({{ video.id }})">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">--:--</div>
+                    </div>
+                    <div class="video-info">
+                        <h4>{{ video.title }}</h4>
+                        <p class="video-description">{{ video.description }}</p>
+                        <div class="video-stats">
+                            <span><i class="fas fa-eye"></i> {{ video.views }} views</span>
+                            <span><i class="fas fa-calendar"></i> {{ video.upload_date[:10] }}</span>
+                        </div>
+                        <div class="video-actions">
+                            <button class="btn-like" onclick="reactToVideo({{ video.id }}, 'like')">
+                                <i class="fas fa-thumbs-up"></i> <span>{{ video.likes }}</span>
+                            </button>
+                            <button class="btn-dislike" onclick="reactToVideo({{ video.id }}, 'dislike')">
+                                <i class="fas fa-thumbs-down"></i> <span>{{ video.dislikes }}</span>
+                            </button>
+                            <button class="btn-comment" onclick="openVideoModal({{ video.id }})">
+                                <i class="fas fa-comment"></i> Comment
+                            </button>
+                            <button class="btn-share" onclick="shareVideo({{ video.id }})">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                            {% if is_admin %}
+                            <button class="btn-delete" onclick="deleteVideo({{ video.id }})">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="empty-state">
+                    <i class="fas fa-video"></i>
+                    <h3>No Videos Available</h3>
+                    <p>{% if is_admin %}Upload your first video to get started!{% else %}Check back later for new
+                        videos.{% endif %}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BSABE Department</h4>
+                    <p>Capiz State University - Pontevedra Campus</p>
+                    <p>Pontevedra, Capiz, Philippines</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-phone"></i> (036) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> bsabe.pontevedra@capsu.edu.ph</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Capiz State University - BSABE Department. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal video-modal">
+        <div class="modal-content video-modal-content">
+            <div class="modal-header">
+                <h3 id="videoModalTitle"><i class="fas fa-video"></i> Video Player</h3>
+                <span class="close" onclick="closeVideoModal()">&times;</span>
+            </div>
+            <div class="modal-body video-modal-body">
+                <div class="video-player-container">
+                    <video id="modalVideoPlayer" controls>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-details">
+                    <h4 id="modalVideoTitle"></h4>
+                    <p id="modalVideoDescription"></p>
+                    <div class="video-stats-modal">
+                        <span id="modalVideoViews"></span>
+                        <span id="modalVideoDate"></span>
+                    </div>
+                    <div class="video-actions-modal">
+                        <button class="btn-like" id="modalLikeBtn">
+                            <i class="fas fa-thumbs-up"></i> <span id="modalLikes">0</span>
+                        </button>
+                        <button class="btn-dislike" id="modalDislikeBtn">
+                            <i class="fas fa-thumbs-down"></i> <span id="modalDislikes">0</span>
+                        </button>
+                        <button class="btn-share" id="modalShareBtn">
+                            <i class="fas fa-share"></i> Share
+                        </button>
+                    </div>
+                </div>
+                <div class="comments-section">
+                    <h5>Comments</h5>
+                    <div class="comment-form">
+                        <input type="text" id="commentAuthor" placeholder="Your name (optional)" maxlength="50">
+                        <textarea id="commentText" placeholder="Add a comment..." rows="3"></textarea>
+                        <button class="btn-primary" onclick="addComment()">Post Comment</button>
+                    </div>
+                    <div class="comments-list" id="commentsList">
+                        <!-- Comments will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Video Modal -->
+    {% if is_admin %}
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-upload"></i> Upload New Video</h3>
+                <span class="close" onclick="closeUploadModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="videoTitle">Video Title:</label>
+                        <input type="text" id="videoTitle" name="title" required maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="videoDescription">Description:</label>
+                        <textarea id="videoDescription" name="description" rows="3" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="videoFile">Video File:</label>
+                        <input type="file" id="videoFile" name="video" accept="video/*" required>
+                        <small>Supported formats: MP4, AVI, MOV, WMV, FLV, WebM, MKV (Max: 500MB)</small>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-primary" onclick="uploadVideo()">
+                            <i class="fas fa-upload"></i> Upload Video
+                        </button>
+                        <button type="button" class="btn-cancel" onclick="closeUploadModal()">
+                            <i class="fas fa-times"></i> Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Login Modal (same as index.html) -->
+    <div id="loginModal" class="modal">...</div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/videos.js') }}"></script>
+</body>
+
+</html>

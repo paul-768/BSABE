@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=yes">
+    <title>BSA Pontevedra Survey System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural and Biosystems Engineering - Pontevedra, Capiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <div class="logo logo-capsu">
+                            <img src="{{ url_for('static', filename='images/capsu-logo.png') }}">
+                            <i class="fas fa-university fallback-icon"></i>
+                        </div>
+                        <div class="logo logo-bsabe">
+                            <img src="{{ url_for('static', filename='images/bsabe-logo.png') }}">
+                            <i class="fas fa-tractor fallback-icon"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1>Agricultural and Biosystems Engineering</h1>
+                        <p>Capiz State University - Pontevedra Campus</p>
+                    </div>
+                </div>
+
+                <!-- In the admin-section div, change this: -->
+                <div class="admin-section">
+                    <button class="back-btn" onclick="goBack()">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    {% if is_admin %}
+                    <span class="admin-badge"><i class="fas fa-crown"></i> Administrator</span>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                    {% else %}
+                    <button class="admin-login-btn" onclick="showLoginModal()">
+                        <i class="fas fa-user-shield"></i> Admin Access
+                    </button>
+                    {% endif %}
+                </div>
+                    <!-- Add this button for videos navigation -->
+                    <button class="admin-login-btn video-btn" onclick="window.location.href='/videos'">
+                        <i class="fas fa-video"></i> Videos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="{{ url_for('static', filename='images/department-bg.png') }}" alt="BSABE Department"
+                onerror="this.style.display='none'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="animate-text">Welcome to BSABE Department</h2>
+                    <p class="animate-text">Excellence in Agricultural and Biosystems Engineering Education, Research,
+                        and Extension Services
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">Level IV</span>
+                            <span class="stat-label">AACCUP Accreditation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Phase II</span>
+                            <span class="stat-label">Survey Visit</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="cta-btn primary" onclick="scrollToContent()">
+                            <span>Explore Documents</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                        <button class="cta-btn secondary" onclick="window.location.href='/videos'">
+                            <span>Watch Videos</span>
+                            <i class="fas fa-play-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-header">
+                <h3>Document Repository</h3>
+
+                <!-- Search Section - Moved here -->
+                <div class="search-section">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-input"
+                            placeholder="Search folders, files, documents...">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+                    <div id="searchOverlay" class="search-overlay"></div>
+                </div>
+
+                <p>Access AACCUP accreditation documents, reports, and resources</p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="cards-grid" id="cardsGrid">
+                {% if is_admin %}
+                <!-- Create Options Button (Admin Only) -->
+                <div class="card add-card" onclick="showCreateOptions()">
+                    <div class="card-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Add New</h3>
+                        <p>Create folder or add file</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Dynamic Cards -->
+                {{ cards_html | safe }}
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BSABE Department</h4>
+                    <p>Capiz State University - Pontevedra Campus</p>
+                    <p>Pontevedra, Capiz, Philippines</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-phone"></i> 0946 080 6049</p>
+                    <p><i class="fas fa-envelope"></i> bsabepontevedra2025@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">University Website</a>
+                    <a href="#">AACCUP Portal</a>
+                    <a href="#">Student Portal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Capiz State University - BSABE Department. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-shield"></i> Administrator Login</h3>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-login">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Settings Modal -->
+    <div id="cardSettingsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="settingsTitle"><i class="fas fa-cog"></i> Folder Settings</h3>
+                <span class="close" onclick="closeCardSettingsModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="cardSettingsForm">
+                    <input type="hidden" id="cardId">
+                    <input type="hidden" id="cardType">
+                    <input type="hidden" id="parentId">
+
+                    <div class="form-group">
+                        <label for="cardName">Folder Name:</label>
+                        <input type="text" id="cardName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardSubtitle">Description:</label>
+                        <input type="text" id="cardSubtitle" placeholder="Brief description of this folder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardLink">External Link (Optional):</label>
+                        <input type="url" id="cardLink" placeholder="https://example.com">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-save" onclick="saveCardChanges()">
+                            <i class="fas fa-save"></i> Save Changes
+                        </button>
+                        {% if is_admin %}
+                        <button type="button" class="btn-primary" onclick="addSubCard()" id="addSubCardBtn">
+                            <i class="fas fa-folder-plus"></i> Add Subfolder
+                        </button>
+                        <button type="button" class="btn-primary" onclick="addFileButton()">
+                            <i class="fas fa-file-plus"></i> Add File
+                        </button>
+                        <button type="button" class="btn-danger" onclick="deleteCard()">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Modal -->
+    <div id="actionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="actionTitle"><i class="fas fa-folder"></i> Folder Options</h3>
+                <span class="close" onclick="closeActionModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="action-buttons">
+                    <button type="button" class="btn-primary action-btn" onclick="viewContents()" id="viewContentsBtn">
+                        <i class="fas fa-folder-open"></i>
+                        Open Folder
+                    </button>
+                    <button type="button" class="btn-secondary action-btn" onclick="proceedToLink()"
+                        id="proceedToLinkBtn">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit External Link
+                    </button>
+                    <button type="button" class="btn-cancel action-btn" onclick="closeActionModal()">
+                        <i class="fas fa-times"></i>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this Create Options Modal after the Action Modal -->
+    <div id="createOptionsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-plus-circle"></i> Create New</h3>
+                <span class="close" onclick="closeCreateOptionsModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="action-buttons">
+                    <button type="button" class="btn-primary action-btn"
+                        onclick="addNewCard(currentParentId); closeCreateOptionsModal();">
+                        <i class="fas fa-folder-plus"></i>
+                        Create New Folder
+                    </button>
+                    <button type="button" class="btn-secondary action-btn"
+                        onclick="addFileButtonFromCreate(); closeCreateOptionsModal();">
+                        <i class="fas fa-file-plus"></i>
+                        Add New File
+                    </button>
+                    <button type="button" class="btn-cancel action-btn" onclick="closeCreateOptionsModal()">
+                        <i class="fas fa-times"></i>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+
+
+</html>
